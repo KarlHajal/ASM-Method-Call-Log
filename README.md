@@ -84,7 +84,7 @@ where I got the ASM format for System.out.println(name) by running it through th
 
 Finally, to make sure that MethodAdapter is used, I implemented an adapter for ClassVisitor called ClassAdapter which returns a MethodAdapter when visitMethod(...) is called, as shown in the ASM code above.
 
-```
+```Java
 class ClassAdapter extends ClassVisitor implements Opcodes {
   
   public ClassAdapter(final ClassVisitor cv) {
@@ -101,7 +101,7 @@ class ClassAdapter extends ClassVisitor implements Opcodes {
 ```
 
 The modification of a target java class happens in the MethodCallLog class shown below:
-```
+```Java
 public class MethodCallLog {
 
   public static void main(final String args[]) throws Exception {
