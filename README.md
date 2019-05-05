@@ -16,7 +16,7 @@ The script compiles the NAME.java file, compiles MethodCallLog, runs it on NAME.
 
 Note that as it stands, the script is configured to use the ASM 6.1.1 jar file.
 
-### How I did it
+### Method
 ***
 I first ran the test Java class through the ASMifier to see what it looked like in ASM format.
 Here's a snippet showing what the methods looked like.
